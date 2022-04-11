@@ -106,7 +106,7 @@
 
 .nombre {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 3%;
 }
 
@@ -290,13 +290,28 @@
     }
 }
 
+a {
+    color: #FFF7BC;
+}
+
 a:hover {
     background-color: black;
     padding: 10px 15px;
     border-radius: 10%;
     transition: 1s;
+    color: #FFF7BC
 }
 
 .botonEnviar {
     color: #0f0c29;
 }
+
+h1 {
+    font-size: 55px;
+}
+
+#carouselExampleInterval {
+    width: 350px;
+    margin: 0 auto;
+}
+
