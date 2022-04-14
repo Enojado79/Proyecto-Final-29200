@@ -6,8 +6,7 @@
 }
 
 .colorBody {
-    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
-
+    background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
 }
 
 #grid {
@@ -79,49 +78,13 @@
     }
 }
 
-.informacion {
-    grid-area: informacion;
+.card {
+    margin: 0 auto;
+    width: 35% !important;
 }
 
-.informacion {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "imagenPerfil"
-    "nombre";
-}
-
-.imagenPerfil {
-    height: 350px;
-    border-radius: 65%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .imagenPerfil {
-        padding: 4%;
-    }
-}
-
-.nombre {
-    text-align: center;
-    font-size: 45px;
-    margin-top: 3%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .nombre {
-        font-size: 25px;
-        padding: 2%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .nombre {
-        font-size: 35px;
-        padding: 2%;
-    }
+.card-body {
+    background-color: rgb(0, 0, 0);
 }
 
 .pieDePagina {
@@ -133,6 +96,7 @@
     text-align: center;
     margin-top: 5%;
     margin-bottom: 10%;
+    font-size: 1rem;
 }
 
 .experiencia {
@@ -152,17 +116,12 @@
         padding: 4%;
     }
 
-    /* .colorBody {
-        height: 100vh;
-    } */
 }
 
 .educacion {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-
 }
 
 .educacion ol, ul {
@@ -171,6 +130,11 @@
 
 .educacion {
     font-size: 25px;
+}
+
+#carouselExampleInterval {
+    margin: 0 auto;
+    width: 20%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -189,36 +153,16 @@
     font-size: 25px;
 }
 
-.imagenConocimientos {
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    height: 237px;
-    width: 482px;
-}
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .conocimientos {
         font-size: 20px;
     }
 
-    .imagenConocimientos {
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    height: 180px;
-    width: 355px;
-    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .conocimientos {
         font-size: 25px;
-    }
-
-    .imagenConocimientos {
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    height: 210px;
-    width: 410px;
     }
 }
 
@@ -228,38 +172,17 @@
 }
 
 .proyectos {
-    display: flex;
-    text-align: center;
-    padding: 2%;
-    font-size: 30px;
+    margin: 0 auto;
+    width: 40%;
 }
 
-.proyecto0, .proyecto1, .proyecto2 {
-    padding: 2%;
+.accordion-button {
+    color: black;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .tituloProyectos {
-        font-size: 40px;
-    }
-
-    .proyectos {
-        display: flex;
-        flex-direction: column;
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .tituloProyectos {
-        font-size: 45px;
-    }
-
-    .proyectos {
-        display: flex;
-        flex-direction: column;
-        font-size: 35px;
-    }
+.accordion-body {
+    background-color: black;
+    font-size: 25px;
 }
 
 .contacto {
@@ -314,12 +237,4 @@ a:hover {
     color: #0f0c29;
 }
 
-h1 {
-    font-size: 55px;
-}
-
-#carouselExampleInterval {
-    width: 350px;
-    margin: 0 auto;
-}
 
