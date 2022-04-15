@@ -28,9 +28,7 @@
         </nav>
     </header>
 
-<div class="contacto">
-    
-    <div class="infoContacto">
+    <div class="infoContacto col-1 col-2 col-3">
         <h1>Informacion de contacto</h1>
 
             <h2>Telefono</h2>
@@ -38,44 +36,40 @@
             <h2>Email</h2>
                 <p>cerd_79@hotmail.com</p>
     </div>
+    
+    <h2 class="contactar">Contactar</h2>
 
-    <div class="caja">    
-        <form>
-            <fieldset>
-                <legend>Dejame tu mensaje</legend>
-                    <div>
-                        <form>
-                            Particular
-                            <input type="radio" name="sexo" id="Hombre">
-                            Empresa
-                            <input type="radio" name="sexo" id="Mujer">
-                        </form>
-                    </div>
-<br>              
-                    <form>
-                        <div><label for="nombre">Nombre:</label></div>
-                        <div><input type="text" id="nombre"></div>              
-                        <div><label for="apellido">E-mail</label></div>
-                        <div><input type="text" id="apellido"></div>
-                    </form>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccionar</option>
+        <option value="1">Particular</option>
+        <option value="2">Empresa</option>
+        
+    </select>
+
 <br>
-        
-        <div>
-            <form>
-                <textarea name="comentarios" rows="10" cols="30"></textarea>    
-            </form> 
-        </div>
-    <br>    
-        <div>
-            <form>
-                <input type="button" value="Enviar" class="botonEnviar">    
-            </form>    
-        
-    </fieldset>    
-        
-    </form>
+<div class="nombremail col-3">
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Nombre y Apellido</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
     </div>
 </div>
+
+<br>
+        
+<div class="form-floating col-1 col-2 col-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Mensaje</label>
+</div>
+
+    <div class="botonenviar">
+        <button type="button" class="btn btn-light">Enviar</button>
+    </div>
+
 
     <footer class="pieDePagina">
         <div class="wow animate__animated animate__heartBeat">

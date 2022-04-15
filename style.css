@@ -1,26 +1,11 @@
 * { 
     padding:0; 
     margin:0; 
-    font-family: EB Garamond;
-    color: #FFF7BC;
+    font-family: EB Garamond !important;
 }
 
 .colorBody {
-    background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
-}
-
-#grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-areas: 
-    "menu"
-    "informacion"
-    "pieDePagina";
-}
-
-.menu {
-    grid-area: menu;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 .menu {
@@ -34,6 +19,10 @@
 
 .menu div {
     display: inline-block;
+}
+
+a {
+    color: whitesmoke;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -80,16 +69,16 @@
 
 .card {
     margin: 0 auto;
-    width: 35% !important;
+    width: 25% !important;
 }
 
 .card-body {
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: whitesmoke;
 }
 
 .pieDePagina {
     grid-area: pieDePagina;
-    
 }
 
 .pieDePagina {
@@ -100,13 +89,9 @@
 }
 
 .experiencia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.experiencia {
-    font-size: 25px;
+    color: whitesmoke;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -122,6 +107,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: whitesmoke;
 }
 
 .educacion ol, ul {
@@ -147,10 +133,8 @@
 }
 
 .conocimientos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -169,6 +153,7 @@
 .tituloProyectos {
     font-size: 65px;
     text-align: center;
+    color: whitesmoke;
 }
 
 .proyectos {
@@ -180,57 +165,53 @@
     color: black;
 }
 
+.accordion-button p {
+    font-size: 18px !important;
+}
+
+
 .accordion-body {
     background-color: black;
     font-size: 25px;
-}
-
-.contacto {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    font-size: 25px;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "infoContacto"
-    "caja";
+    color: whitesmoke;
 }
 
 .infoContacto {
-    grid-area: infoContacto;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    color: whitesmoke;
+}
+.contactar {
+    text-align: center;
+    color: whitesmoke;
 }
 
-.caja {
-    grid-area: caja;
+.form-select {
+    margin: 0 auto;
+    width: 20%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .contacto {
-        font-size: 20px;
-        padding: 4%;
-    }
-
-    .infoContacto {
-        padding: 3%;
-    }
-
-    .infoContacto h1 {
-        font-size: 26px;
-        margin-bottom: 4%;
-    }
+.nombremail {
+    margin: 0 auto;
 }
 
-a {
-    color: #FFF7BC;
+.form-floating {
+    margin: 0 auto;
+}
+
+.botonenviar {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2%;
 }
 
 a:hover {
-    background-color: black;
+    background-color: whitesmoke;
     padding: 10px 15px;
     border-radius: 10%;
     transition: 1s;
-    color: #FFF7BC
+    color: black;
 }
 
 .botonEnviar {
