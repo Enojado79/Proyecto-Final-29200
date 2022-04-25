@@ -80,6 +80,10 @@
     margin-bottom: 10%;
 }
 
+.animate__heartBeat {
+    display: inline-block;
+}
+
 footer a {
     color: whitesmoke;
     text-decoration: none;
