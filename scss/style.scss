@@ -1,0 +1,64 @@
+* { 
+    padding:0; 
+    margin:0;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    font-family: EB Garamond !important;
+}
+
+.navbar {
+    padding: 2%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-toggler {
+    border-color: whitesmoke;
+}
+.navbar-toggler-icon {
+    background-color: whitesmoke;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .nav-link {
+        font-size: 35px;
+    }
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 45px;
+    &:hover {
+        background-color: whitesmoke;
+        padding: 8px 12px;
+        border-radius: 0.5em;
+        transition: 1s;
+        color: black;
+    }
+}
+
+.card {
+    margin: auto;
+    margin-top: 3%;
+    width: 25rem;
+    .card-body {
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        color: whitesmoke;
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            &:hover {
+                background-color: whitesmoke;
+                padding: 8px 12px;
+                border-radius: 0.5em;
+                transition: 1s;
+                color: black;
+            }
+        }
+    }
+}
+
