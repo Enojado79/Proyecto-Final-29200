@@ -1,10 +1,12 @@
+@import "colores";
+
 * { 
     padding:0; 
     margin:0;
 }
 
 body {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: $color-fondo;
     font-family: EB Garamond !important;
 }
 
@@ -17,10 +19,10 @@ body {
 }
 
 .navbar-toggler {
-    border-color: whitesmoke;
+    border-color: $color-letra;
 }
 .navbar-toggler-icon {
-    background-color: whitesmoke;
+    background-color: $color-letra;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -30,7 +32,7 @@ body {
 }
 
 .nav-link {
-    color: whitesmoke;
+    color: $color-letra;
     font-size: 45px;
     &:hover {
         background-color: whitesmoke;
@@ -45,12 +47,15 @@ body {
     margin: auto;
     margin-top: 3%;
     width: 25rem;
+
     .card-body {
-        background-image: linear-gradient(to right, #434343 0%, black 100%);
-        color: whitesmoke;
+        background-image: $color-fondo;
+        color: $color-letra;
+
         a {
-            color: whitesmoke;
+            color: $color-letra;
             text-decoration: none;
+            
             &:hover {
                 background-color: whitesmoke;
                 padding: 8px 12px;
@@ -62,3 +67,180 @@ body {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .card {
+        width: 18rem !important;
+    }
+}
+
+footer a {
+    color: $color-letra;
+    text-decoration: none;
+    font-size: 30px;
+    &:hover {
+        background-color: whitesmoke;
+        padding: 8px 12px;
+        border-radius: 0.5em;
+        transition: 1s;
+        color: black;
+    }
+}
+
+.pieDePagina {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.animate__heartBeat {
+    display: inline-block;
+}
+
+.tituloExperiencia {
+    color: $color-letra;
+    font-size: 65px;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .tituloExperiencia {
+        font-size: 45px;
+    }
+}
+
+.educacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $color-letra;
+    font-size: 25px;
+
+    .tituloEducacion {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .tituloEducacion {
+        font-size: 45px;
+    }
+}
+
+.educacion ol, ul {
+    padding-left: 0%;
+}
+
+#carouselExampleInterval {
+    margin: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .educacion {
+        font-size: 16px;
+    }
+}
+
+.conocimientos {
+    color: $color-letra;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .conocimientos {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .conocimientos {
+        font-size: 25px;
+    }
+}
+
+.tituloProyectos {
+    font-size: 65px;
+    text-align: center;
+    color: $color-letra;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .tituloProyectos {
+        font-size: 45px;
+    }
+}
+
+.proyectos {
+    margin: auto;
+}
+
+.accordion-button {
+    color: black;
+    p {
+        font-size: 23px !important;
+        margin-bottom: 0;
+    }
+}
+
+.accordion-body {
+    background-image: $color-fondo;
+    font-size: 25px;
+    color: $color-letra;
+}
+
+@media screen and (min-width: 320px) and (max-width: 989px) {
+    .col-5 {
+        width: 95%;
+    }
+}
+
+.infoContacto {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    color:$color-letra;
+
+    .tituloContacto {
+        font-size: 65px;
+    }
+}
+
+.contactar {
+    text-align: center;
+    color: $color-letra;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .tituloContacto {
+        font-size: 45px;
+    }
+}
+
+.form-select {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.nombremail {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 989px) {
+    .col-4 {
+        width: 90%;
+    }
+}
+
+.form-floating {
+    margin: 0 auto;
+    .form-control {
+        resize: none;
+    }
+}
+
+.botonenviar {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2%;
+    color: #0f0c29;
+}
