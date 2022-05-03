@@ -109,7 +109,9 @@ footer a:hover {
   font-size: 25px;
 }
 .educacion .tituloEducacion {
+  color: whitesmoke;
   font-size: 65px;
+  text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -146,9 +148,9 @@ footer a:hover {
   }
 }
 .tituloProyectos {
+  color: whitesmoke;
   font-size: 65px;
   text-align: center;
-  color: whitesmoke;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
