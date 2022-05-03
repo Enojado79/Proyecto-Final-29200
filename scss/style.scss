@@ -1,4 +1,5 @@
 @import "colores";
+@import "letra";
 
 * { 
     padding:0; 
@@ -98,13 +99,13 @@ footer a {
 
 .tituloExperiencia {
     color: $color-letra;
-    font-size: 65px;
+    font-size: $letra-titulos;
     text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .tituloExperiencia {
-        font-size: 45px;
+        font-size: $letra-titulos - 20;
     }
 }
 
@@ -116,13 +117,13 @@ footer a {
     font-size: 25px;
 
     .tituloEducacion {
-        font-size: 65px;
+        font-size: $letra-titulos
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .tituloEducacion {
-        font-size: 45px;
+        font-size: $letra-titulos - 20;
     }
 }
 
@@ -159,14 +160,14 @@ footer a {
 }
 
 .tituloProyectos {
-    font-size: 65px;
+    font-size: $letra-titulos;
     text-align: center;
     color: $color-letra;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .tituloProyectos {
-        font-size: 45px;
+        font-size: $letra-titulos - 20;
     }
 }
 
@@ -201,7 +202,7 @@ footer a {
     color:$color-letra;
 
     .tituloContacto {
-        font-size: 65px;
+        font-size: $letra-titulos;
     }
 }
 
@@ -212,7 +213,7 @@ footer a {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .tituloContacto {
-        font-size: 45px;
+        font-size: $letra-titulos - 20;
     }
 }
 
@@ -244,3 +245,4 @@ footer a {
     margin-top: 2%;
     color: #0f0c29;
 }
+
