@@ -8,8 +8,6 @@ body {
   font-family: EB Garamond !important;
 }
 
-
-
 .navbar {
   padding: 2%;
 }
@@ -23,10 +21,12 @@ body {
     font-size: 25px !important;
   }
 }
+
 .nav-link {
   color: whitesmoke !important;
   font-size: 45px;
 }
+
 .nav-link:hover {
   background-color: whitesmoke;
   padding: 8px 12px;
