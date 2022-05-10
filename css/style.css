@@ -21,14 +21,12 @@ body {
     font-size: 25px !important;
   }
 }
-
 .nav-link {
   color: whitesmoke !important;
   font-size: 45px;
 }
-
 .nav-link:hover {
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
   padding: 8px 12px;
   border-radius: 0.5em;
   transition: 1s;
@@ -41,7 +39,7 @@ body {
   width: 25rem;
 }
 .card .card-body {
-  background-image:linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: whitesmoke;
 }
 .card .card-body a {
@@ -61,7 +59,6 @@ body {
     width: 18rem !important;
   }
 }
-
 .pdf {
   display: flex;
   justify-content: center;
@@ -160,6 +157,16 @@ footer a:hover {
 }
 .proyectos {
   margin: auto;
+}
+
+.botonGithub a {
+  color: black;
+  text-decoration: none;
+}
+.botonGithub a:hover {
+  font-size: 18px;
+  background-color: black;
+  color: whitesmoke;
 }
 
 .accordion-button {
