@@ -47,20 +47,19 @@ body {
         background-image: $color-fondo;
         color: $color-letra;
 
-        a {
-            color: $color-letra;
-            text-decoration: none;
-            
+        .redes {
+            height: 35px;
+
             &:hover {
-                background-color: whitesmoke;
-                padding: 8px 12px;
-                border-radius: 0.5em;
-                transition: 1s;
-                color: black;
+                height: 40px;
+                transition: 0.5s;
             }
         }
+
+
     }
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .card {
@@ -82,7 +81,7 @@ footer a {
         background-color: whitesmoke;
         padding: 8px 12px;
         border-radius: 0.5em;
-        transition: 1s;
+        transition: 0.5s;
         color: black;
     }
 }
@@ -182,8 +181,7 @@ footer a {
     text-decoration: none;
     &:hover {
         font-size: 18px;
-        background-color: black;
-        color: whitesmoke;
+        transition: 0.5s;
     }
 }
 
@@ -215,6 +213,14 @@ footer a {
 
     .tituloContacto {
         font-size: $letra-titulos;
+    }
+
+    .iconoTelefono {
+        height: 34px;
+    }
+
+    .iconoMail {
+        height: 34px;
     }
 }
 
@@ -257,6 +263,4 @@ footer a {
     margin-top: 2%;
     color: #0f0c29;
 }
-
-
 
