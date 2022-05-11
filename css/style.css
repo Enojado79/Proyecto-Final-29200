@@ -58,6 +58,7 @@ body {
 .pdf {
   display: flex;
   justify-content: center;
+  padding-top: 5%;
 }
 
 footer a {
