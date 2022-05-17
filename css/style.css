@@ -4,10 +4,24 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: linear-gradient(-45deg, #069b1f, #000000, #1f233a, #0a0d96);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   font-family: EB Garamond !important;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .navbar {
   padding: 2%;
 }
@@ -28,7 +42,7 @@ body {
 .nav-link:hover {
   background-color: whitesmoke !important;
   padding: 8px 12px;
-  border-radius: 0.5em;
+  border-radius: 28px;
   transition: 1s;
   color: black !important;
 }
@@ -37,10 +51,18 @@ body {
   margin: auto;
   margin-top: 3%;
   width: 25rem;
+  box-shadow: 10px 10px 5px rgb(255, 255, 255);
+}
+.card:hover {
+  width: 25.5rem;
+  transition: 1s;
 }
 .card .card-body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: whitesmoke;
+}
+.card .card-body a {
+  text-decoration: none;
 }
 .card .card-body .redes {
   height: 35px;
@@ -58,7 +80,6 @@ body {
 .pdf {
   display: flex;
   justify-content: center;
-  padding-top: 5%;
 }
 
 footer a {
