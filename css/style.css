@@ -108,6 +108,12 @@ body {
   transition: 0.5s;
 }
 
+hr {
+  color: whitesmoke;
+  align-self: center;
+  width: 60%;
+}
+
 /* Pagina Servicios */
 
 .card {
