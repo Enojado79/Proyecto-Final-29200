@@ -7,8 +7,8 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #069b1f, #000000, #1f233a, #0a0d96);
-	background-size: cover;
+    background: linear-gradient(-45deg, #069b1f, #000000, #293058, #0a0d96);
+	background-size: 400% 700%;;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
     font-family: EB Garamond !important;
@@ -25,6 +25,8 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+/* Menu de navegacion Bootstrap */
 
 .navbar {
     padding: 2%;
@@ -53,6 +55,67 @@ body {
     }
 }
 
+/* Card con foto y redes */
+
+.perfil {
+    margin: 0 auto;
+    padding-top: 3%;
+}
+.cuerpo {
+    border-radius: 45px;
+    background-color: #111612;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        &:hover {
+            background: #1a1717;
+            box-shadow:  -22px -22px 44px #bababa, 22px 22px 44px #ffffff;
+            transition: 0.5s;
+        }
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: whitesmoke;
+    .foto {
+        width: 50%;
+        border-radius: 50%;
+        padding: 2%;
+    }
+}
+
+.info {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.redes {
+    text-align: center;
+    padding: 2%;
+    a {
+        text-decoration: none;
+    }
+    .redes__icon {
+        height: 60px;
+        &:hover {
+            height: 65px;
+            transition: 0.5s;
+        }
+    }
+}
+
+hr {
+    color: whitesmoke;
+    align-self: center;
+    width: 60%;
+}
+
+/* Pagina Servicios */
+
 .card {
     margin: auto;
     margin-top: 3%;
@@ -67,25 +130,13 @@ body {
         background-image: $color-fondo;
         color: $color-letra;
         .card-text {
-            font-size: 35px !important;
+            font-size: 20px !important;
         }
         a {
             text-decoration: none;
         }
-
-        .redes {
-            height: 35px;
-
-            &:hover {
-                height: 40px;
-                transition: 0.5s;
-            }
-        }
-
-
     }
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .card {
@@ -93,10 +144,14 @@ body {
     }
 }
 
+/* PDF dentro de la pagina */
+
 .pdf {
     display: flex;
     justify-content: center;
 }
+
+/* Footer con animacion */
 
 footer a {
     color: $color-letra;
@@ -128,15 +183,7 @@ footer a {
     text-align: center;
 }
 
-.tituloExperiencia {
-    @include titulo;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .tituloExperiencia {
-        font-size: $letra-titulos - 20;
-    }
-}
+/* Pagina de Formacion Academica, se agrego un carrusel con bootstrap  */
 
 .educacion {
     display: flex;
@@ -187,6 +234,8 @@ footer a {
         font-size: 25px;
     }
 }
+
+/* Pagina Proyectos, se uso bootstrap para un acordion  */
 
 .tituloProyectos {
     @include titulo;
@@ -249,6 +298,8 @@ footer a {
         height: 34px;
     }
 }
+
+/* Pagina Contacto */
 
 .contactar {
     text-align: center;
