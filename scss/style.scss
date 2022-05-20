@@ -90,6 +90,20 @@ body {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .imagen .foto {
+        height: 320px;
+        width: 285px;
+    }  
+}
+
+@media screen and (min-width: 481px) and (max-width: 1400px) {
+    .imagen .foto {
+        height: 415px;
+        width: 385px;
+    }
+}
+
 .info {
     text-align: center;
     color: whitesmoke;
