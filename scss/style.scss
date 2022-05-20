@@ -61,6 +61,7 @@ body {
     margin: 0 auto;
     padding-top: 3%;
 }
+
 .cuerpo {
     border-radius: 45px;
     background-color: #111612;
@@ -82,7 +83,8 @@ body {
     gap: 10px;
     color: whitesmoke;
     .foto {
-        width: 50%;
+        width: 475px;
+        height: 550px;
         border-radius: 50%;
         padding: 2%;
     }
@@ -100,9 +102,11 @@ body {
         text-decoration: none;
     }
     .redes__icon {
-        height: 60px;
+        height: 64px;
+        width: 64px;
         &:hover {
-            height: 65px;
+            height: 70px;
+            width: 70px;
             transition: 0.5s;
         }
     }
@@ -120,6 +124,9 @@ hr {
     margin: auto;
     margin-top: 3%;
     width: 25rem;
+    .card-img-top {
+        height: 230px;
+    }
         &:hover {
         width: 25.5rem;
         transition: 1s;
@@ -143,6 +150,9 @@ hr {
         width: 18rem !important;
     }
 }
+
+
+
 
 /* PDF dentro de la pagina */
 
@@ -173,7 +183,7 @@ footer a {
     margin-bottom: 10%;
 }
 
-.animate__heartBeat {
+.pie {
     display: inline-block;
 }
 
@@ -220,6 +230,10 @@ footer a {
 .conocimientos {
     color: $color-letra;
     text-align: center;
+}
+
+.imgHtml {
+    height: 410px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -291,11 +305,13 @@ footer a {
     }
 
     .iconoTelefono {
-        height: 34px;
+        height: 50px;
+        width: 50px;
     }
 
     .iconoMail {
-        height: 34px;
+        height: 50px;
+        width: 50px;
     }
 }
 
