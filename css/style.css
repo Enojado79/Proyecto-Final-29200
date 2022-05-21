@@ -4,8 +4,8 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #069b1f, #000000, #293058, #0a0d96);
-  background-size: 400% 700%;
+  background: linear-gradient(-45deg, #069b1f, #1d1b1b, #3c4788, #0a0d96);
+  background-size: 400% 750%;
   animation: gradient 15s ease infinite;
   height: 100vh;
   font-family: EB Garamond !important;
@@ -22,10 +22,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
-
-
-
 /* Menu de navegacion Bootstrap */
 .navbar {
   padding: 2%;
@@ -90,16 +86,14 @@ body {
   .imagen .foto {
     height: 320px;
     width: 285px;
-  }  
+  }
 }
-
 @media screen and (min-width: 481px) and (max-width: 1400px) {
   .imagen .foto {
     height: 415px;
     width: 385px;
   }
 }
-
 .info {
   text-align: center;
   color: whitesmoke;
@@ -134,12 +128,12 @@ hr {
   margin-top: 3%;
   width: 25rem;
 }
+.card .card-img-top {
+  height: 230px;
+}
 .card:hover {
   width: 25.5rem;
   transition: 1s;
-}
-.card-img-top {
-  height: 230px;
 }
 .card .card-body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -157,9 +151,6 @@ hr {
     width: 18rem !important;
   }
 }
-
-
-
 /* PDF dentro de la pagina */
 .pdf {
   display: flex;
@@ -168,30 +159,38 @@ hr {
 
 /* Footer con animacion */
 footer a {
-  color: whitesmoke;
   text-decoration: none;
-  font-size: 30px;
-}
-footer a:hover {
-  background-color: whitesmoke;
-  padding: 8px 12px;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: black;
+  color: whitesmoke;
 }
 
 .pieDePagina {
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 8%;
+  margin-bottom: 5%;
 }
 
-.pie {
+.imgPdf {
+  height: 40px;
+}
+.imgPdf:hover {
+  height: 45px;
+  transition: 0.5s;
+}
+
+.irArriba {
   display: inline-block;
+  font-size: 25px;
+}
+.irArriba:hover {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  transition: 1s;
+}
+.irArriba a:hover {
+  color: black;
 }
 
-/* Pagina de Formacion Academica, se agrego un carrusel con bootstrap  */
-
+/* Pagina de Formacion Academica, se agrego un carrusel con Bootstrap  */
 .educacion {
   display: flex;
   flex-direction: column;
@@ -200,14 +199,12 @@ footer a:hover {
   font-size: 25px;
 }
 .educacion .tituloEducacion {
-  color: whitesmoke;
   font-size: 65px;
-  text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .tituloEducacion {
-    font-size: 45px;
+    font-size: 45px !important;
   }
 }
 .educacion ol, ul {
@@ -238,7 +235,7 @@ footer a:hover {
     font-size: 25px;
   }
 }
-/* Pagina Proyectos, se uso bootstrap para un acordion  */
+/* Pagina Proyectos, se uso Bootstrap para un acordion  */
 .tituloProyectos {
   color: whitesmoke;
   font-size: 65px;
@@ -258,7 +255,7 @@ footer a:hover {
   color: black;
   text-decoration: none;
 }
-.botonGithub:hover {
+.botonGithub a:hover {
   font-size: 18px;
   transition: 0.5s;
 }
@@ -282,6 +279,7 @@ footer a:hover {
     width: 95%;
   }
 }
+/* Pagina Contacto */
 .infoContacto {
   text-align: center;
   margin: auto;
@@ -292,25 +290,6 @@ footer a:hover {
   font-size: 65px;
 }
 
-.iconoContacto {
-  height: 50px;
-  width: 50px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .iconoContacto {
-    height: 25px;
-    width: 25px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .iconoContacto {
-    height: 35px;
-    width: 35px;
-  }
-}
-
-/* Pagina Contacto */
 .contactar {
   text-align: center;
   color: whitesmoke;
