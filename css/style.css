@@ -166,11 +166,11 @@ footer a {
 .pieDePagina {
   text-align: center;
   margin-top: 8%;
-  margin-bottom: 5%;
 }
 
 .imgPdf {
   height: 40px;
+  margin-bottom: 6%;
 }
 .imgPdf:hover {
   height: 45px;
@@ -180,6 +180,7 @@ footer a {
 .irArriba {
   display: inline-block;
   font-size: 25px;
+  margin-bottom: 6%;
 }
 .irArriba:hover {
   background-color: whitesmoke;
